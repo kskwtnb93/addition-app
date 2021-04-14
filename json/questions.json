@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "text": "Question 1",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Apple:10 & Grape:1",
+                "points": {
+                    "apple": 10,
+                    "grape": 1
+                }
+            },
+            {
+                "id": 2,
+                "text": "Apple:10 & Orange:1",
+                "points": {
+                    "apple": 10,
+                    "orange": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Question 2",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Orange:10 & Apple:1",
+                "points": {
+                    "orange": 10,
+                    "apple": 1
+                }
+            },
+            {
+                "id": 2,
+                "text": "Orange:10 & Grape:1",
+                "points": {
+                    "orange": 10,
+                    "grape": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Question 3",
+        "answers": [
+            {
+                "id": 1,
+                "text": "Grape:10 & Apple:1",
+                "points": {
+                    "grape": 10,
+                    "apple": 1
+                }
+            },
+            {
+                "id": 2,
+                "text": "Grape:10 & Orange:1",
+                "points": {
+                    "grape": 10,
+                    "orange": 1
+                }
+            }
+        ]
+    }
+]

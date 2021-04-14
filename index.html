@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDITION APP</title>
+    <style>
+        /*初期表示時にテンプレートが一瞬表示されてしまうのを防ぐ*/
+        /* [v-cloak] {
+            display: none;
+        } */
+        html {
+            /* font-family: "Helvetica Neue",
+                Arial,
+                "Hiragino Kaku Gothic ProN",
+                "Hiragino Sans",
+                Meiryo,
+                sans-serif;
+            font-family: "Times New Roman",
+                "YuMincho",
+                "Hiragino Mincho ProN",
+                "Yu Mincho",
+                "MS PMincho",
+                serif; */
+            font-family: "游明朝",
+                YuMincho,
+                "Hiragino Mincho ProN W3",
+                "ヒラギノ明朝 ProN W3",
+                "Hiragino Mincho ProN",
+                "HG明朝E",
+                "ＭＳ Ｐ明朝",
+                "ＭＳ 明朝",
+                serif;
+            /* font-family: 'Noto Sans JP', sans-serif; */
+            font-size: 10px;
+            color: #333;
+            font-weight: 300;
+        }
+        header {
+            /* background-color: rgba(88, 80, 77, .8); */
+            background-color: black;
+            padding: 1rem;
+            color: #fff;
+            text-align: center;
+            font-size: 1.4rem;
+            /* font-family: "游明朝",
+                YuMincho,
+                "Hiragino Mincho ProN W3",
+                "ヒラギノ明朝 ProN W3",
+                "Hiragino Mincho ProN",
+                "HG明朝E",
+                "ＭＳ Ｐ明朝",
+                "ＭＳ 明朝",
+                serif; */
+        }
+        #app {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            padding: 2rem 3rem 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav li {
+            padding: 1rem;
+        }
+        .main-contents {
+            text-align: center;
+            padding: 11rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@2.0.2/destyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- Vue Router -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <!-- Vue Loader -->
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>Select App</header>
+
+    <div id="app">
+        <!-- <ul class="nav">
+            <router-link tag="li" to="/">start</router-link>
+            <router-link tag="li" to="/question">question</router-link>
+            <router-link tag="li" to="/result">result</router-link>
+        </ul> -->
+        <router-view></router-view>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
